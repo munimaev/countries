@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather/Merriweather-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: OpenSans-CondBold;
+    src: url(../fonts/Open_Sans_Condensed/OpenSans-CondBold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora/Lora-Bold.ttf);
+    font-weight: bold;
+}
+.map {
+	margin-top: 30px;
+	height: 50px;
+	background-color: darkblue;
+}
+h1.title {
+	font-size: 4em;
+	font-family: Merriweather;
+}
+h1.title img{
+	height: 1em;
+	width: 1em;
+    margin-top: -0.75em;
+}
+
+.coordinates {
+	border-top: 1px solid #e3e3e4;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.coordinate {
+	font-family:  OpenSans-CondBold;
+	color: #97999b;
+	display: inline-block;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+.coordinate + .coordinate {
+	padding-left: 10px;
+	border-left: 1px solid #e3e3e4;
+}
+.details dl > dt {
+	color: #2c3138;
+	font-family:  Lora;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+.details {
+}
+.details .bignumber {
+	font-size: 4em;
+	font-family:  OpenSans-CondBold;
+	font-weight: bold;
+	color: #e0e0e1;
+    line-height: 1;
+}
+.details .bignumber ~ small {
+	/*font-family:  OpenSans-CondBold;*/
+
+}
+.details dl {
+	margin-top: 1em;
+	padding-top: 1em;
+	margin-bottom: 1em;
+	border-top: 1px solid #e3e3e4;
+}
+
+
+
+
+.countries ul li, .regions ul li {
+	color: #6a6d70;
+	font-family:  OpenSans-CondBold;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.navcountries h5, .navregions h5, 
+.countries h5, .regions h5 {
+	color: #2c3138;
+	font-family:  Lora;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	margin-top: 30px;
+}
+
+
+	.navcountries, .navregions {
+		height: 6em;
+	}
+	.navcountries {
+		margin-top: 5em;
+	}
+	.navcountries h5, .navregions h5 {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	}
+	.nav {
+		position: fixed;
+		display: none;
+	}
+@media (max-width: 767px) {
+	.nav {
+		display: block;
+	}
+
+	
+	h1.title {
+		font-size: 2em;
+		font-family: Merriweather;
+	}
+	h1.title img{
+		height: 1.5em;
+		width: 1.5em;
+	    margin-top: 0.05em;
+	}
+	.details  .bignumber {
+		font-size: 3em;
+	}
+	.countries , .regions  , .information  {
+		display: none;
+	}	
+	.countries.show , .regions.show  {
+		display: block;
+	}	
+	.countries.shown , .regions.shown, .information.shown  {
+		display: block;
+	}
+}
