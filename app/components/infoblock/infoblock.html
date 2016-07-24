@@ -1,0 +1,45 @@
+<div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-6 col-md-8 information  shown">
+  <h1 class="title">{{$ctrl.info.title}}</h1>
+
+  <div class="coordinates">
+    <div class="coordinate">
+    {{$ctrl.info.coord[0]}}
+    </div>
+    <div class="coordinate">
+    {{$ctrl.info.coord[1]}}
+    </div>
+  </div>
+  <div class="row details ">
+    <div class="col-md-6">
+      <dl>
+        <dt>POPULATION<br>—</dt>
+        <dd><span class="bignumber">{{$ctrl.info.population}}</span></dd>
+      </dl>
+    </div>
+    <div class="col-md-6">
+      <dl>
+        <dt>AREA<br>—</dt>
+        <dd><span class="bignumber">{{$ctrl.info.area}}</span></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="row details ">
+    <div class="col-md-12">
+      <dl>
+        <dt>Shares border with<br>—</dt>
+        <dd ng-switch="$ctrl.info.isCountry">
+          <ul class="list-inline" ng-switch-when="1">
+            <li ng-repeat="b in $ctrl.info.borders">
+              <a ui-sref="country({cid:b.id})">{{b.name}}</a>
+            </li>
+          </ul>
+          <ul class="list-inline" ng-switch-default>
+            <li ng-repeat="b in $ctrl.info.borders">
+              <a ui-sref="region({rid:b.id})">{{b.name}}</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>

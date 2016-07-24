@@ -1,0 +1,8 @@
+<infoblock data-info="$ctrl.props" ng-show="$ctrl.infoShow()"></infoblock>
+<div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-3 col-md-2 regions">
+      <h5>Regions</h5>
+      <ul class="list-unstyled">
+            <li ng-repeat="r in $ctrl.regions"><a ui-sref="region({rid:r.id})">{{r.name}}</a></li>
+      </ul>
+</div>
+<ui-view></ui-view>

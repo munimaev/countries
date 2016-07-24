@@ -1,0 +1,6 @@
+<div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-3 col-md-2 countries">
+  <h5>Countries</h5>
+  <ul class="list-unstyled">
+    <li ng-repeat="c in $ctrl.countries"><a ui-sref="country({cid:c.id})">{{c.name}}</a></li>
+  </ul>
+</div>

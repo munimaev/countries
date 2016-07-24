@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>wOrld</title>
+    <title>Countries</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-  <!--   <link href='https://fonts.googleapis.com/css?family=Merriweather:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,147 +17,14 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-      <div class="row">
-      </div>
-    <div class="container">
+  <body ng-app="myapp">
+    <ui-view></ui-view>
 
-      <div class="row">
-        <div class="col-xs-2 col-sm-6 col-md-4 nav">
-          <div class="row">
-            <div class="col-sm-6 navcountries">
-              <h5>Страны</h5>
-            </div>
-            <div class="col-sm-6 navregions">
-              <h5>Регионы</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-3 col-md-2 countries">
-          <h5>Страны</h5>
-          <div class="form-group has-feedback search">
-            <input type="text" class="form-control" >
-            <span class="glyphicon glyphicon-search form-control-feedback" ></span>
-          </div>
-          <ul class="list-unstyled">
-            <li>Австралийский Союз</li>
-            <li>Австрийская Республика</li>
-            <li>Азербайджанская Республика</li>
-            <li>Республика Албания</li>
-            <li>Алжирская Народная Демократическая Республика</li>
-            <li>Республика Ангола</li>
-            <li>Княжество Андорра</li>
-            <li>Антигуа и Барбуда</li>
-            <li>Аргентинская Республика</li>
-            <li>Республика Армения</li>
-            <li>Исламская Республика Афганистан</li>
-            <li>Содружество Багамских Островов</li>
-            <li>Народная Республика Бангладеш</li>
-            <li>Барбадос</li>
-            <li>Королевство Бахрейн</li>
-            <li>Республика Беларусь</li>
-            <li>Белиз</li>
-            <li>Королевство Бельгия</li>
-            <li>Республика Бенин</li>
-            <li>Республика Болгария</li>
-            <li>Многонациональное Государство Боливия</li>
-            <li>Босния и Герцеговина</li>
-            <li>Республика Ботсвана</li>
-            <li>Федеративная Республика Бразилия</li>
-            <li>Государство Бруней-Даруссалам</li>
-            <li>Буркина-Фасо</li>
-          </ul>
-        </div>
-        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-3 col-md-2 regions">
-          <h5>Регионы</h5>
-          <div class="form-group has-feedback search">
-            <input type="text" class="form-control" >
-            <span class="glyphicon glyphicon-search form-control-feedback" ></span>
-          </div>
-          <ul class="list-unstyled">
-            <li>Belgorod Oblast</li>
-            <li>Bryansk Oblast</li>
-            <li>Vladimir Oblast</li>
-            <li>Voronezh Oblast</li>
-            <li>Ivanovo Oblast</li>
-            <li>Kaluga Oblast</li>
-            <li>Kostroma Oblast</li>
-            <li>Kursk Oblast</li>
-            <li>Lipetsk Oblast</li>
-            <li>Moscow</li>
-            <li>Moscow Oblast</li>
-            <li>Oryol Oblast</li>
-            <li>Ryazan Oblast</li>
-            <li>Smolensk Oblast</li>
-            <li>Tambov Oblast</li>
-            <li>Tver Oblast</li>
-            <li>Tula Oblast</li>
-            <li>Yaroslavl Oblast</li>
-          </ul>
-        </div>
-        <div class="col-xs-offset-2 col-xs-10 col-sm-offset-0 col-sm-6 col-md-8 information  shown">
-              <div class="map">4</div>
-              <h1 class="title">The United Kingdom of Great Britain and Northern Ireland
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"></h1>
-              <div class="coordinates">
-                <div class="coordinate">
-                12.12-54*
-                </div>
-                <div class="coordinate">
-                12.12-54*
-                </div>
-              </div>
-              <div class="row details ">
-                <div class="col-md-6">
-                  <dl>
-                    <dt>POPULATION<br>—</dt>
-                    <dd><span class="bignumber">1.234.456.789</span><br><small>Количесвто человек</small></dd>
-                  </dl>
-                </div>
-                <div class="col-md-6">
-                  <dl>
-                    <dt>AREA<br>—</dt>
-                    <dd><span class="bignumber">1.234.456.789</span><br><small>Квадратных километров</small></dd>
-                  </dl>
-                </div>
-              </div>
-              <div class="row details ">
-                <div class="col-md-6">
-                  <dl>
-                    <dt>AREA<br>—</dt>
-                    <dd>The United Kingdom of Great Britain and Northern Ireland</dd>
-                  </dl>
-                </div>
-                <div class="col-md-6">
-                  <dl>
-                    <dt>AREA<br>—</dt>
-                    <dd>The United Kingdom of Great Britain and Northern Ireland</dd>
-                  </dl>
-                </div>
-              </div>
-              <div class="row details ">
-                <div class="col-md-6">
-                  <dl>
-                    <dt>AREA<br>—</dt>
-                    <dd>The United Kingdom of Great Britain and Northern Ireland</dd>
-                  </dl>
-                </div>
-                <div class="col-md-6">
-                  <dl>
-                    <dt>AREA<br>—</dt>
-                    <dd>The United Kingdom of Great Britain and Northern Ireland</dd>
-                  </dl>
-                </div>
-              </div>
-        </div>
-      </div>
 
-      
-    </div>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
 </html>
